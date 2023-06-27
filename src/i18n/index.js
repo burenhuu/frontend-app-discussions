@@ -16,13 +16,14 @@ import frFRMessages from './messages/fr_FR.json';
 import hiMessages from './messages/hi.json';
 import itITMessages from './messages/it_IT.json';
 import plMessages from './messages/pl.json';
+import mnMessages from './messages/mn.json';
 import ptPTMessages from './messages/pt_PT.json';
 import ruMessages from './messages/ru.json';
 import trTRMessages from './messages/tr_TR.json';
 import ukMessages from './messages/uk.json';
 import zhcnMessages from './messages/zh_CN.json';
 
-const appMessages = {
+export const appMessages = {
   ar: arMessages,
   de: deMessages,
   'es-419': es419Messages,
@@ -38,6 +39,7 @@ const appMessages = {
   ru: ruMessages,
   hi: hiMessages,
   cs: csMessages,
+  mn: mnMessages,
   'es-AR': esARMessages,
   'es-ES': esESMessages,
   'fa-IR': faIRMessages,
