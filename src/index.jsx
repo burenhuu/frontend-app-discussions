@@ -14,8 +14,10 @@ import { AppProvider, ErrorPage } from '@edx/frontend-platform/react';
 import { messages as paragonMessages } from '@edx/paragon';
 
 import { DiscussionsHome } from './discussions';
-import appMessages from './i18n';
+import messages from './i18n';
+import { appMessages } from './i18n';
 import store from './store';
+import { IntlProvider } from '@edx/frontend-platform/i18n';
 
 import './assets/favicon.ico';
 import './index.scss';
@@ -23,7 +25,9 @@ import './index.scss';
 subscribe(APP_READY, () => {
   ReactDOM.render(
     <AppProvider store={store}>
-      <DiscussionsHome />
+      <IntlProvider defaultLocale='mn' locale='mn' messages={appMessages.mn}>
+        <DiscussionsHome />
+      </IntlProvider>
     </AppProvider>,
     document.getElementById('root'),
   );
@@ -38,7 +42,7 @@ initialize({
   messages: [
     headerMessages,
     footerMessages,
-    appMessages,
+    messages,
     paragonMessages,
   ],
   handlers: {
