@@ -24,7 +24,7 @@ import './index.scss';
 subscribe(APP_READY, () => {
   ReactDOM.render(
     <AppProvider store={store}>
-      <IntlProvider defaultLocale='mn' locale='mn' messages={appMessages.mn}>
+      <IntlProvider defaultLocale='mn' locale='mn' messages={messages.mn}>
         <DiscussionsHome />
       </IntlProvider>
     </AppProvider>,
