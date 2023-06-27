@@ -269,3 +269,7 @@ header {
   background-color:#12367E !important;
   border-color:#12367E !important;
 }
+
+.btn-brand.focus:before, .btn-brand:focus:before{
+  border: 2px solid #12367E !important;
+}
