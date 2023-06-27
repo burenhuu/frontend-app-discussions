@@ -15,7 +15,6 @@ import { messages as paragonMessages } from '@edx/paragon';
 
 import { DiscussionsHome } from './discussions';
 import messages from './i18n';
-import { appMessages } from './i18n';
 import store from './store';
 import { IntlProvider } from '@edx/frontend-platform/i18n';
 
