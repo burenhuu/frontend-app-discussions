@@ -9,6 +9,7 @@ import itITMessages from './messages/it_IT.json';
 import plMessages from './messages/pl.json';
 import trTRMessages from './messages/tr_TR.json';
 import zhcnMessages from './messages/zh_CN.json';
+import mnMessages from './messages/mn.json';
 
 const messages = {
   ar: arMessages,
@@ -19,6 +20,7 @@ const messages = {
   'fr-fr': frFRMessages,
   'it-it': itITMessages,
   pl: plMessages,
+  mn: mnMessages,
   'tr-tr': trTRMessages,
   'zh-cn': zhcnMessages,
 };
